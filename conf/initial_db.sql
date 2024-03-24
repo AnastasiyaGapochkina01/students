@@ -1,0 +1,12 @@
+create database students;
+use students;
+create table classone (id int, uname varchar(255), surname varchar(255), avgscore float);
+create user if not exists 'php'@'%' identified by 'phppasswd';
+grant usage on *.* to 'php'@'%';
+grant select, insert on students.* to 'php'@'%';
+flush privileges;
+insert into classone values (1, 'John', 'Smith', 4.5);
+insert into classone values (2, 'Eve', 'Brown', 5.0);
+insert into classone values (3, 'Alfred', 'Grey', 4.3);
+insert into classone values (4, 'Tom', 'Tailor', 4.8);
+insert into classone values (5, 'Alice', 'Potter', 3.1);

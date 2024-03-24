@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <titleAdd record</title>
+</head>
+<body>
+    <h1>Adding record</h1>
+    
+    <!-- Форма для добавления записи -->
+    <form method="post" action="process_form.php">
+        <label for="id">id:</label>
+        <input type="text" id="id" name="id" required>
+	<label for="uname">uname:</label>
+	<input type="text" uname="uname" name="uname" required>
+        <label for="surname">surname:</label>
+	<input type="text" name="surname" name="surname" required>
+	<label for="avgscore">avgscore:</label>
+	<input type="text" name="avgscore" name="avgscore" required>
+	<br><br>
+        <input type="submit" value="Add record">
+    </form>
+    
+    <br>
+    <a href="view_records.php">View all records</a>
+</body>
+</html>
